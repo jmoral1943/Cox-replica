@@ -1,0 +1,140 @@
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+.BundleCard {
+  border: 1px solid #7c9bc2;
+  width: 450px;
+  box-shadow: 3px 2px 10px 3px rgba(0, 0, 0, 0.05),
+    -3px 2px 10px 1px rgba(0, 0, 0, 0.1);
+}
+// box-shadow: 0px 5px 15px 5px rgba(0,0,0,0.14);
+
+.BundleCard__Header {
+  letter-spacing: 1.5px;
+  background-color: $off-white;
+  margin: 0;
+  padding: 0.5em 0 0.5em 0.5em;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.BundleCard__included {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 29px;
+  margin-bottom: 15px;
+}
+
+.BundleCard__Internet,
+.BundleCard__Tv {
+  border-right: 1px solid $off-white;
+  width: 100%;
+}
+
+.BundleCard__Internet,
+.BundleCard__Tv,
+.BundleCard__Voice {
+  height: 80px;
+}
+
+.BundleCard__image {
+  margin: 0 auto;
+  display: block;
+}
+
+.Internet__Speed,
+.Tv__Channels,
+.Voice__Option {
+  font-size: 1.3em;
+  text-align: center;
+  margin-bottom: 0.1em;
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+.Internet__Units,
+.Tv__Units,
+.Voice__Units {
+  font-size: 0.75em;
+  text-align: center;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+}
+
+// color for button #3266a8
+
+.BundleCard__NotIncluded {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 0.7em;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  margin: 15px auto 0 auto;
+  width: 80px;
+}
+
+.BundleCard__NotIncluded--Image,
+.BundleCard__NotIncluded {
+  // filter: grayscale(90%);
+  opacity: 0.5;
+}
+
+.BundleCard__PricesAndTerms {
+  background-color: $off-white;
+  width: 100%;
+}
+
+.BundleCard__Price,
+.BundleCard__Discounts {
+  display: inline-block;
+}
+
+.BundleCard__Price {
+  padding-left: 1.5em;
+}
+
+.PricesAndTerms__Agreement {
+  font-size: 0.79em;
+  width: 200px;
+  opacity: 0.6;
+  margin-top: 3px;
+  line-height: 1.6;
+}
+
+.PricesAndTerms__Price {
+  font-size: 1em;
+  font-weight: 900;
+  margin-bottom: 3px;
+
+  span {
+    font-size: 1.9em;
+    font-family: "Roboto", sans-serif;
+    margin-right: 9px;
+  }
+}
+
+.BundleCard__TermsAndCond {
+  text-decoration: underline;
+  font-size: .8em;
+  opacity: .7;
+  margin-top: 10px;
+}
+
+.Discount {
+  color: rgb(6, 6, 31);
+  font-weight: 800;
+  margin-bottom: 5px;
+  font-size: .95em;
+  span {
+    font-weight: unset;
+    text-decoration: line-through;
+    opacity: 0.6;
+    font-size: .85em;
+  }
+}
+
+.BundleCard__Discounts {
+  top: -30px;
+  position: relative;
+}
