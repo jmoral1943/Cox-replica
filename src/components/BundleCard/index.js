@@ -78,17 +78,16 @@ const BundleCard = props => (
 
     <div className="BundleCard__PricesAndTerms">
       <div className="BundleCard__Price">
-        <h3 className="PricesAndTerms__Price">
-          <span>$ {props.price}</span> /mo.
-        </h3>
+        <h3 className="PricesAndTerms__Price">$ {props.price}</h3>
         <p className="PricesAndTerms__Agreement">{props.agreement}</p>
+        <p className="BundleCard__TermsAndCond BundleCard__TermsAndCond--mobile">See Offer Details & Terms</p>
       </div>
 
       <div className="BundleCard__Discounts">
         <p className="Discount">
           Save {props.discount}% <span> Reg. ${props.regularPrice}</span>
         </p>
-        <p className="BundleCard__TermsAndCond">See Offer Details & Terms</p>
+        <p className="BundleCard__TermsAndCond BundleCard__TermsAndCond--desktop">See Offer Details & Terms</p>
       </div>
     </div>
 

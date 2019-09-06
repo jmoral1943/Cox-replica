@@ -1,6 +1,7 @@
 .ListShowing {
   margin-left: 20px;
   margin-top: 20px;
+  display: none;
 }
 .List {
   margin-bottom: 20px;
@@ -10,13 +11,42 @@
 }
 
 .List__Checkmark {
+  width: 20px;
   font-weight: 800;
   margin-right: 14px;
 }
 
 .List__Text {
   display: inline-block;
-  font-weight: 800;
+  font-weight: 900;
   margin-bottom: 0;
   margin-top: 0;
+}
+
+
+@media(min-width: 800px) {
+  .ListShowing {
+    margin-left: 20px;
+    margin-top: 20px;
+    display: unset;
+  }
+  .List {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+  }
+  
+  .List__Checkmark {
+    font-weight: 800;
+    margin-right: 14px;
+  }
+  
+  .List__Text {
+    display: inline-block;
+    font-weight: 800;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  
 }
