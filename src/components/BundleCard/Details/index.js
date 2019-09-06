@@ -12,6 +12,24 @@ class Details extends React.Component {
     });
   };
 
+  handleOpenDetails = () => {
+    let ls = document.querySelector('.ListShowing')
+    if (ls.style.display === 'block') {
+      ls.style.display = 'none';
+      document.querySelector('.Details').style.minHeight = 'unset';
+    } else {
+      ls.style.display = 'block';
+      document.querySelector('.Details').style.minHeight = '150px';
+    }
+
+    let dropdown = document.querySelector('.c-details-dropdown');
+    if (dropdown.style.transform === 'rotate(-90deg)') {
+      dropdown.style.transform = 'rotate(90deg)';
+    } else {
+      dropdown.style.transform = 'rotate(-90deg)';
+    }
+  }
+
   render() {
     let ListShowing;
     if (this.state.showing === "Internet") {
@@ -67,12 +85,19 @@ class Details extends React.Component {
               Voice
             </button>
           )}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            className="c-details-dropdown"
+            onClick={this.handleOpenDetails}
+          >
+            <path d="M8.122 24l-4.122-4 8-8-8-8 4.122-4 11.878 12z" />
+          </svg>
         </div>
 
-        <div className="ListShowing">
-           {ListShowing}
-        </div>
-       
+        <div className="ListShowing">{ListShowing}</div>
       </div>
     );
   }
