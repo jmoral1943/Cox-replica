@@ -1,0 +1,26 @@
+.Details {
+  padding-left: 20px;
+  min-height: 175px;
+}
+
+.Details__button {
+  border: none;
+  opacity: 0.8;
+  font-size: .99em;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: 2.4em;
+  cursor: pointer;
+  outline: none;
+}
+
+.Active__button {
+  border-bottom: 5px solid $dark-blue;
+  opacity: 1;
+}
+
+.Details__Buttons {
+  border-bottom: 1px solid $dark-blue;
+  width: 380px;
+  margin-left: 1em;
+}

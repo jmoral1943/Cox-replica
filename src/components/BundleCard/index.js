@@ -1,5 +1,6 @@
 import React from "react";
 import Details from "./Details/index";
+import OrderButton from "./OrderButton";
 
 const BundleCard = props => (
   <div className="BundleCard">
@@ -96,6 +97,7 @@ const BundleCard = props => (
       tv={["140+ Unique Channels"]}
       voice={false}
     />
+    <OrderButton />
   </div>
 );
 

@@ -13,7 +13,7 @@ class Details extends React.Component {
   };
 
   render() {
-    let ListShowing = <div></div>;
+    let ListShowing;
     if (this.state.showing === "Internet") {
       ListShowing = this.props.internet.map(Service => {
         return <List service={Service} key={Service} />;
@@ -29,23 +29,50 @@ class Details extends React.Component {
     }
 
     return (
-      <div>
-        <div>
+      <div className="Details">
+        <div className="Details__Buttons">
           {this.props.internet && (
-            <button onClick={() => this.handleChangeList("Internet")}>
+            <button
+              className={
+                this.state.showing === "Internet"
+                  ? "Details__button Active__button"
+                  : "Details__button Internet__button"
+              }
+              onClick={() => this.handleChangeList("Internet")}
+            >
               Internet
             </button>
           )}
           {this.props.tv && (
-            <button onClick={() => this.handleChangeList("Tv")}>Tv</button>
+            <button
+              className={
+                this.state.showing === "Tv"
+                  ? "Details__button Active__button"
+                  : "Details__button"
+              }
+              onClick={() => this.handleChangeList("Tv")}
+            >
+              Tv
+            </button>
           )}
           {this.props.voice && (
-            <button onClick={() => this.handleChangeList("Voice")}>
+            <button
+              className={
+                this.state.showing === "Voice"
+                  ? "Details__button Active__button"
+                  : "Details__button"
+              }
+              onClick={() => this.handleChangeList("Voice")}
+            >
               Voice
             </button>
           )}
         </div>
-        {ListShowing}
+
+        <div className="ListShowing">
+           {ListShowing}
+        </div>
+       
       </div>
     );
   }

@@ -1,0 +1,22 @@
+.ListShowing {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.List {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.List__Checkmark {
+  font-weight: 800;
+  margin-right: 14px;
+}
+
+.List__Text {
+  display: inline-block;
+  font-weight: 800;
+  margin-bottom: 0;
+  margin-top: 0;
+}
