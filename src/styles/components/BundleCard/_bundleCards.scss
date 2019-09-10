@@ -2,7 +2,7 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 
-.BundleCard {
+.c-bundle-card {
   border: 1px solid #7c9bc2;
   width: 90vw;
   max-width: 470px;
@@ -11,7 +11,7 @@ html {
   margin: 0 auto;
 }
 
-.BundleCard__Header {
+.c-bundle-card__header {
   letter-spacing: 1.5px;
   background-color: $off-white;
   margin: 0;
@@ -20,26 +20,26 @@ html {
   font-weight: 900;
 }
 
-.BundleCard__included {
+.c-bundle-card__services {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-top: 29px;
   margin-bottom: 15px;
 }
 
-.BundleCard__Internet,
-.BundleCard__Tv {
+.c-bundle-card__service--internet,
+.c-bundle-card__service--t {
   border-right: 1px solid $off-white;
   width: 100%;
 }
 
-.BundleCard__Internet,
-.BundleCard__Tv,
-.BundleCard__Voice {
+.c-bundle-card__service--internet,
+.c-bundle-card__service--t,
+.c-bundle-card__Voice {
   height: 80px;
 }
 
-.BundleCard__image {
+.c-bundle-card__icon {
   margin: 0 auto;
   display: block;
 }
@@ -65,7 +65,7 @@ html {
 
 // color for button #3266a8
 
-.BundleCard__NotIncluded {
+.c-bundle-card__not-included {
   text-transform: uppercase;
   text-align: center;
   font-size: 0.7em;
@@ -75,12 +75,12 @@ html {
   width: 80px;
 }
 
-.BundleCard__NotIncluded--Image,
-.BundleCard__NotIncluded {
+.c-bundle-card__not-included-icon,
+.c-bundle-card__not-included {
   opacity: 0.5;
 }
 
-.BundleCard__PricesAndTerms {
+.c-bundle-card__PricesAndTerms {
   background-color: $off-white;
   width: 100%;
   padding-left: 1.5em;
@@ -88,8 +88,8 @@ html {
   display: flex;
 }
 
-.BundleCard__Price,
-.BundleCard__Discounts {
+.c-bundle-card__Price,
+.c-bundle-card__Discounts {
   display: inline-block;
 }
 
@@ -118,14 +118,14 @@ html {
   margin-top: 18px;
 }
 
-.BundleCard__TermsAndCond {
+.c-bundle-card__TermsAndCond {
   text-decoration: underline;
   font-size: 0.8em;
   opacity: 0.7;
   margin-top: 10px;
 }
 
-.BundleCard__Discounts {
+.c-bundle-card__Discounts {
   margin-left: auto;
   margin-right: 1em;
 }
@@ -145,27 +145,27 @@ html {
   padding: 1.9em 1.2em;
   width: 20vw;
 }
-.BundleCard__TermsAndCond--desktop {
+.c-bundle-card__TermsAndCond--desktop {
   display: none;
 }
-.BundleCard__TermsAndCond--mobile {
+.c-bundle-card__TermsAndCond--mobile {
   margin-top: 1px;
 }
 
 
 @media (min-width: 800px) {
-  .BundleCard__TermsAndCond--mobile {
+  .c-bundle-card__TermsAndCond--mobile {
     display: none;
   }
 
-  .BundleCard__TermsAndCond--desktop {
+  .c-bundle-card__TermsAndCond--desktop {
     display: unset;
   }
   html {
     font-family: "Montserrat", sans-serif;
   }
 
-  .BundleCard {
+  .c-bundle-card {
     border: 1px solid #7c9bc2;
     width: 90vw;
     max-width: 470px;
@@ -174,7 +174,7 @@ html {
     margin: 0 auto;
   }
 
-  .BundleCard__Header {
+  .c-bundle-card__header {
     letter-spacing: 1.5px;
     background-color: $off-white;
     margin: 0;
@@ -183,32 +183,32 @@ html {
     font-weight: 900;
   }
 
-  .BundleCard__included {
+  .c-bundle-card__services {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-top: 29px;
     margin-bottom: 15px;
   }
 
-  .BundleCard__Internet,
-  .BundleCard__Tv {
+  .c-bundle-card__service--internet,
+  .c-bundle-card__service--tv {
     border-right: 1px solid $off-white;
     width: 100%;
   }
 
-  .BundleCard__Internet,
-  .BundleCard__Tv,
-  .BundleCard__Voice {
+  .c-bundle-card__service--internet,
+  .c-bundle-card__service--tv,
+  .c-bundle-card__Voice {
     height: 80px;
   }
 
-  .BundleCard__image {
+  .c-bundle-card__icon {
     margin: 0 auto;
     display: block;
   }
 
   .Internet__Speed,
-  .Tv__Channels,
+  .service--tv__Channels,
   .Voice__Option {
     font-size: 1.3em;
     text-align: center;
@@ -228,7 +228,7 @@ html {
 
   // color for button #3266a8
 
-  .BundleCard__NotIncluded {
+  .c-bundle-card__not-included {
     text-transform: uppercase;
     text-align: center;
     font-size: 0.7em;
@@ -238,23 +238,23 @@ html {
     width: 80px;
   }
 
-  .BundleCard__NotIncluded--Image,
-  .BundleCard__NotIncluded {
+  .c-bundle-card__not-included-icon,
+  .c-bundle-card__not-included {
     opacity: 0.5;
   }
 
-  .BundleCard__PricesAndTerms {
+  .c-bundle-card__PricesAndTerms {
     background-color: $off-white;
     width: 100%;
     display: unset;
   }
 
-  .BundleCard__Price,
-  .BundleCard__Discounts {
+  .c-bundle-card__Price,
+  .c-bundle-card__Discounts {
     display: inline-block;
   }
 
-  .BundleCard__Price {
+  .c-bundle-card__Price {
     padding-left: 1.5em;
   }
 
@@ -266,7 +266,7 @@ html {
     line-height: 1.6;
   }
 
-  .BundleCard__TermsAndCond {
+  .c-bundle-card__TermsAndCond {
     text-decoration: underline;
     font-size: 0.8em;
     opacity: 0.7;
@@ -289,7 +289,7 @@ html {
     width: unset;
   }
 
-  .BundleCard__Discounts {
+  .c-bundle-card__Discounts {
     top: -30px;
     position: relative;
   }
